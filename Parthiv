@@ -1,0 +1,34 @@
+import java.util.Scanner;
+	public class gradingweightstable {
+    	 
+		public static void main(String args[]){
+			
+    	  
+            float labs,readingquiz,revel,midterm,project,Final;
+            Scanner sc=new Scanner(System.in);
+            System.out.print("Enter Labs Average in Percent:");
+            labs=sc.nextFloat();
+            System.out.print("Enter Reading Quiz Average in Percent:");
+            readingquiz=sc.nextFloat();
+            System.out.print("Enter REVEL Average in Percent:");
+            revel=sc.nextFloat();
+            System.out.print("Enter Midterm Average in Percent:");
+            midterm=sc.nextFloat();
+            System.out.print("Enter Project Average in Percent:");
+            project=sc.nextFloat();
+            System.out.print("Enter Final Average in Percent:");
+            Final=sc.nextFloat();
+            
+            float labsWeight,readingquizWeight,revelWeight,midtermWeight,projectWeight,finalWeight;
+            labsWeight=(labs/100)*20;
+            readingquizWeight=(readingquiz/100)*10;
+            revelWeight=(revel/100)*15;
+            midtermWeight=(midterm/100)*20;
+            projectWeight=(project/100)*15;
+            finalWeight=(Final/100)*20;
+           
+            float average;
+            average=labsWeight+readingquizWeight+revelWeight+midtermWeight+projectWeight+finalWeight;
+            System.out.println("Your average is "+average+"%");
+      }
+}
